@@ -1,0 +1,64 @@
+{
+  "name": "etma",
+  "domain": "http://etma-dashboard.jinnbytedev.com",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@azure/msal-browser": "^2.17.0",
+    "@azure/msal-react": "^1.0.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "datatables-buttons": "^1.0.3",
+    "datatables.net-buttons": "^1.7.1",
+    "datatables.net-dt": "^1.1.0",
+    "jspdf": "^2.4.0",
+    "jspdf-autotable": "^3.5.20",
+    "pdfmake": "^0.1.72",
+    "react": "^17.0.2",
+    "react-data-table-component": "^7.3.1",
+    "react-data-table-component-extensions": "^1.5.2",
+    "react-datepicker": "^4.1.1",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.11.0",
+    "react-microsoft-login": "^1.15.0",
+    "react-papaparse": "^3.17.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
+    "styled-component": "^2.8.0",
+    "styled-components": "^5.3.1",
+    "sweetalert2": "^11.0.18",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "datatables.net": "^1.10.25",
+    "jquery": "^3.6.0"
+  }
+}

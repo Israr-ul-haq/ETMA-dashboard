@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Booklet Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="font/iconsmind-s/css/iconsminds.css" />
+    <link
+      rel="stylesheet"
+      href="font/simple-line-icons/css/simple-line-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.rtl.only.min.css" />
+    <link rel="stylesheet" href="css/vendor/fullcalendar.min.css" />
+    <link rel="stylesheet" href="css/vendor/dataTables.bootstrap4.min.css" />
+    <link
+      rel="stylesheet"
+      href="css/vendor/datatables.responsive.bootstrap4.min.css"
+    />
+    <link rel="stylesheet" href="css/vendor/select2.min.css" />
+    <link rel="stylesheet" href="css/vendor/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap-stars.css" />
+    <link rel="stylesheet" href="css/vendor/nouislider.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="css/vendor/component-custom-switch.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- <body id="app-container" class="menu-default show-spinner"> -->
+  <body id="app-container" class="menu-default page-body">
+    <nav class="navbar fixed-top top-menu dasboard-top-menu">
+      <div class="d-flex align-items-center navbar-left">
+        <img class="menu-logo" src="images/Logo.png" />
+        <a href="#" class="menu-button d-none d-md-block">
+          <img class="" src="images/list.svg" />
+        </a>
+
+        <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
+            <rect x="0.5" y="0.5" width="25" height="1" />
+            <rect x="0.5" y="7.5" width="25" height="1" />
+            <rect x="0.5" y="15.5" width="25" height="1" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="navbar-right">
+        <div class="header-icons d-inline-block align-middle">
+          <!-- <button class="header-icon btn btn-empty d-none d-sm-inline-block" type="button" id="">
+                    <img src="img/logout.svg" alt="">
+                </button> -->
+        </div>
+
+        <div class="user d-inline-block">
+          <button
+            class="btn btn-empty p-0"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="name dashboard-profile-name">John Doe</span>
+            <span>
+              <img alt="Profile Picture" src="images/Profile.png" />
+            </span>
+          </button>
+
+          <!-- <div class="dropdown-menu dropdown-menu-right mt-3">
+                    <a class="dropdown-item" href="#">Account</a>
+                    <a class="dropdown-item" href="#">Features</a>
+                    <a class="dropdown-item" href="#">History</a>
+                    <a class="dropdown-item" href="#">Support</a>
+                    <a class="dropdown-item" href="#">Sign out</a>
+                </div> -->
+        </div>
+      </div>
+    </nav>
+    <div class="menu">
+      <div class="main-menu dashboar-right">
+        <div class="scroll">
+          <ul class="list-unstyled">
+            <li>
+              <a href="ManageUser.html">
+                <img alt="Profile Picture" src="images/Customer.png" />
+                <span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="ManageBooklet.html">
+                <img alt="Profile Picture" src="images/Todos.png" />
+                <span>Booklet</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="BookletAssignment.html">
+                <img alt="Profile Picture" src="images/flyerWhite.png" />
+                <span>Assign Booklet</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main class="manage-users-main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="
+                dashboardheaderbar
+                d-flex
+                justify-content-between
+                align-items-center
+              "
+            >
+              <h1 class="dashboardtitle">Booklet Assignment</h1>
+              <div class="btngroup">
+                <a href="#">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary dashboardtitle-btn"
+                  >
+                    Assign Booklet
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="separator mb-5"></div>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12 mb-4">
+            <div class="card">
+              <div class="card-body table-inner">
+                <div class="card-body-top-row">
+                  <div class="card-body-top-row-left">
+                    <div
+                      class="
+                        card-body-top-row-left-inner
+                        card-body-top-row-left1
+                        card-body-top-row-left1b
+                      "
+                    >
+                      <h4 class="mb-4 second-title">Export Users:</h4>
+                      <div class="dt-buttons btn-group">
+                        <button
+                          class="
+                            btn btn-secondary
+                            buttons-pdf buttons-html5
+                            btn-primary
+                            table-small-btn table-small-btn1
+                          "
+                          tabindex="0"
+                          aria-controls="driverDetails"
+                        >
+                          <span>PDF</span>
+                        </button>
+                        <button
+                          class="
+                            btn btn-secondary
+                            buttons-csv buttons-html5
+                            btn-primary
+                            table-small-btn
+                          "
+                          tabindex="0"
+                        >
+                          <span>CSV</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- <div class="card-body-top-row-left-inner card-body-top-row-left2">
+                                    <h4 class="mb-4 second-title">Import User:</h4>
+                                    <div class="dt-buttons btn-group"> 
+                                        <button class="btn btn-secondary buttons-pdf buttons-html5 btn-primary table-small-btn-import" tabindex="0" aria-controls="driverDetails"><span>Import</span></button> 
+                                    </div> 
+                                   </div> -->
+                  </div>
+
+                  <div class="dataTables_filter-div">
+                    <div
+                      id="driverDetails_filter"
+                      class="dataTables_filter dataTables_filter-left"
+                    >
+                      <p class="filter-text">Filter</p>
+                      <a href="FilterBookletAssignment.html">
+                        <img src="images/Filter.png"
+                      /></a>
+                    </div>
+
+                    <div id="driverDetails_filter" class="dataTables_filter">
+                      <button class="btn-search">
+                        <img src="images/search.png" />
+                      </button>
+                      <input
+                        type="search"
+                        class="form-control form-control-sm search-field"
+                        placeholder="Search"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <table
+                  class="data-table data-table-feature"
+                  id="data-table-etma"
+                >
+                  <thead>
+                    <tr>
+                      <th>Booklet ID</th>
+                      <th>User Name</th>
+                      <th>Email</th>
+                      <th>Booklet Name</th>
+                      <th>Type</th>
+                      <th>Repetion Type</th>
+                      <th>Version</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>Lahaina Grill</td>
+                      <td>Lahaina@gmail.com</td>
+                      <td class="booklet">Booklet 1</td>
+                      <td>GMT</td>
+                      <td>QT, QST</td>
+                      <td>1.0.0</td>
+                      <!-- <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>Adam Hawkins</td>
+                      <td>Janice@gmail.com</td>
+                      <td class="booklet">Booklet 2</td>
+                      <td>GMT</td>
+                      <td>QT, QST</td>
+                      <td>1.0.0</td>
+                      <!-- <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+                    <tr>
+                      <td>03</td>
+                      <td>Craig Clark</td>
+                      <td>CraigClark@gmail.com</td>
+                      <td class="booklet">Booklet 3</td>
+                      <td>SST</td>
+                      <td>QT, QST</td>
+                      <td>1.0.0</td>
+                      <!--  <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+                    <tr>
+                      <td>04</td>
+                      <td>Alice Mendez</td>
+                      <td>Aliceez@gmail.com</td>
+                      <td class="booklet">Booklet 4</td>
+                      <td>CT</td>
+                      <td>QT, QST</td>
+                      <td>1.0.0</td>
+                      <!-- <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+                    <tr>
+                      <td>05</td>
+                      <td>Janice Oliver</td>
+                      <td>Janice@gmail.com</td>
+                      <td class="booklet">Booklet 5</td>
+                      <td>GMT</td>
+                      <td>QT, QST</td>
+                      <td>1.0.0</td>
+                      <!-- <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+                    <tr>
+                      <td>06</td>
+                      <td>George Bailey</td>
+                      <td>George@gmail.com</td>
+                      <td class="booklet">Booklet 1</td>
+                      <td>CT</td>
+                      <td>QT, QST</td>
+                      <td>1.0.0</td>
+                      <!--   <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+
+                    <tr>
+                      <td>07</td>
+                      <td>Frank Green</td>
+                      <td>Frank@gmail.com</td>
+                      <td class="booklet">Booklet 7</td>
+                      <td>CAT A</td>
+                      <td>QT</td>
+                      <td>1.0.0</td>
+                      <!--   <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+                    <tr>
+                      <td>08</td>
+                      <td>Amber Stanley</td>
+                      <td>Amber@gmail.com</td>
+                      <td class="booklet">Booklet 1</td>
+                      <td>SST</td>
+                      <td>QT, QST</td>
+                      <td>1.0.0</td>
+                      <!-- <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+                    <tr>
+                      <td>09</td>
+                      <td>Eugene Colem</td>
+                      <td>Eugene@gmail.com</td>
+                      <td class="booklet">Booklet 1</td>
+                      <td>CAT A</td>
+                      <td>QT</td>
+                      <td>1.0.0</td>
+                      <!--  <td>
+                                         <div class="actionbtns">
+                                            <a href="#" class="listcardtable__actionbtn"><img src="images/Edit.svg" alt="edit data table"></a>
+                                            <a href="#"><img src="images/Block.png" alt="block data table"></a>
+                                         </div>
+                                        </td> -->
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="row view-pager">
+                  <div class="text pagination-text">
+                    <div
+                      class="dataTables_info"
+                      id="DataTables_Table_0_info"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      Showing 1 to 9 of 23 enteries
+                    </div>
+                  </div>
+                  <div
+                    class="dataTables_paginate paging_simple_numbers"
+                    id="DataTables_Table_0_paginate"
+                  >
+                    <ul class="pagination pagination-sm">
+                      <li
+                        class="paginate_button page-item previous disabled"
+                        id="driverDetails_previous"
+                      >
+                        <a
+                          href="#"
+                          aria-controls="DataTables_Table_0"
+                          data-dt-idx="0"
+                          tabindex="0"
+                          class="page-link"
+                          >Previous</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item active">
+                        <a
+                          href="#"
+                          aria-controls="DataTables_Table_0"
+                          data-dt-idx="1"
+                          tabindex="0"
+                          class="page-link"
+                          >1</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item">
+                        <a
+                          href="#"
+                          aria-controls="DataTables_Table_0"
+                          data-dt-idx="2"
+                          tabindex="0"
+                          class="page-link"
+                          >2</a
+                        >
+                      </li>
+                      <li class="paginate_button page-item">
+                        <a
+                          href="#"
+                          aria-controls="DataTables_Table_0"
+                          data-dt-idx="3"
+                          tabindex="0"
+                          class="page-link"
+                          >3</a
+                        >
+                      </li>
+                      <!-- <li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                                        <li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                                        <li class="paginate_button page-item next" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="6" tabindex="0" class="page-link next"><i class="simple-icon-arrow-right"></i></a></li> -->
+                      <li
+                        class="paginate_button page-item next"
+                        id="driverDetails_next"
+                      >
+                        <a
+                          href="#"
+                          aria-controls="DataTables_Table_0"
+                          data-dt-idx="3"
+                          tabindex="0"
+                          class="page-link next"
+                          >Next</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/Chart.bundle.min.js"></script>
+    <script src="js/vendor/chartjs-plugin-datalabels.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
+    <script src="js/vendor/fullcalendar.min.js"></script>
+    <script src="js/vendor/datatables.min.js"></script>
+    <script src="js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <script src="js/vendor/progressbar.min.js"></script>
+    <script src="js/vendor/jquery.barrating.min.js"></script>
+    <script src="js/vendor/select2.full.js"></script>
+    <script src="js/vendor/nouislider.min.js"></script>
+    <script src="js/vendor/bootstrap-datepicker.js"></script>
+    <script src="js/vendor/Sortable.js"></script>
+    <script src="js/vendor/mousetrap.min.js"></script>
+    <script src="js/dore.script.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
